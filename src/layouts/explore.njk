@@ -5,5 +5,29 @@ eleventyNavigation:
     key: Explore
     title: Explore
 ---
-
-<h1>Explore</h1>
+<link rel="stylesheet" href="/assets/css/explore.css">
+<section class="bg-success jumbotron text-white">
+    <h1>Explore</h1>
+    <p class="lead">Browse from the various handicrafts from the skilled craftspeople all around India.</p>
+</section>
+<section class="container">
+    {% set products = collections.products %}
+    {% for rows in products | batch(3) %}
+    <div class='row mb-2'>
+        {% for p in rows %}
+        <div class='col-md-4'>
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-img-top" src="{{p.data.image}}" alt="p.data.name">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ p.data.name }}</h5>
+                    <p class="card-text text-success">{{p.data.price}} Rupees</p>
+                    <a href="{{p.permalink}}" class="btn btn-info">View</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>

@@ -8,7 +8,10 @@ title:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}title - {% endif %}</title>
+    <title>{% if title %} {{ title }} - {% endif %}HandMade</title>
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.css" />
     <link rel="stylesheet" href="/assets/css/navbar.css" />
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -21,6 +24,8 @@ title:
     <section class="content">
         {{ layoutContent | safe }}
     </section>
+    <!-- <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+    <script src="https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

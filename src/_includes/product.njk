@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<section class="jumbotron bg-primary">
+    <h1>{{ name }}</h1>
+</section>
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{image}}" alt="{{name}}" class="img-fluid w-100">
+        </div>
+        <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima quam corporis voluptatem
+                amet, autem quaerat quidem consectetur voluptate commodi?</p>
+            <button class="snipcart-add-item" data-item-id="11ty-{{page.fileSlug}}" data-item-name="{{name}}"
+                data-item-price="{{price}}" data-item-image="{{config.siteUrl}}{{image}}"
+                data-item-url="{{config.siteUrl}}/products.json">
+                Buy for {{price}} Rupees
+            </button>
+        </div>
+    </div>
+</section>
