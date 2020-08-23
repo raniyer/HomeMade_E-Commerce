@@ -37,3 +37,7 @@ html body{
   align-items: center;
   text-align: center;
 }
+
+.snipcart-checkout{
+  border: none;
+}
