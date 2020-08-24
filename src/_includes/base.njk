@@ -21,7 +21,7 @@ title:
 
 <body>
     {% include '_navbar.njk' %}
-    <section class="content">
+    <section class="content mb-4">
         {{ layoutContent | safe }}
     </section>
     {% if title != 'Home' %} {% include '_footer.njk' %} {% endif %}

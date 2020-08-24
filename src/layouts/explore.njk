@@ -16,13 +16,15 @@ eleventyNavigation:
     <div class='row'>
         {% for p in rows %}
         <div class='col-md-4 mb-3'>
-            <div class="card">
+            <div class="card-deck">
 
-                <img class="card-img-top w-100" src="{{p.data.image}}" alt="p.data.name">
-                <div class="card-body">
-                    <h5 class="card-title">{{ p.data.name }}</h5>
-                    <p class="card-text text-success">{{p.data.price}} Rupees</p>
-                    <a href="{{p.url}}" class="btn btn-info">View</a>
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{p.data.image}}" alt="p.data.name">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ p.data.name }}</h5>
+                        <p class="card-text text-success">{{p.data.price}} Rupees</p>
+                        <a href="{{p.url}}" class="btn btn-info">View</a>
+                    </div>
                 </div>
             </div>
         </div>
