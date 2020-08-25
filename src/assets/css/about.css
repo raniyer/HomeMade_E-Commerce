@@ -142,3 +142,139 @@
 .uplift-right-col .social-media a:hover .fa-linkedin {
     color: #0e76a8;
 }
+
+/*-------------------Team Section--------------------*/
+.team-section h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.team-section .container {
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+    min-height: 1px;
+}
+
+.team-section {
+    min-height: 100vh;
+    padding: 60px 15px;
+    float: left;
+    width: 100%;
+}
+
+.team-section .card {
+    width: 25%;
+    float: left;
+    padding: 0px 15px;
+    border: none;
+}
+
+.team-section .card .box {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #dfe6e9;
+    transition: margin 1s ease, box-shadow 1s ease;
+}
+
+.team-section .card .box:hover {
+    margin-top: -15px;
+    box-shadow: 0px 0px 40px grey;
+}
+
+.team-section .card .box img {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.team-section .card .box h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 20px 0px 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.team-section .card .box h5 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #2d3436;
+    margin: 0px 0px 15px;
+    text-align: center;
+}
+
+.team-section .card .box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------Media Query---------------------*/
+
+@media screen and (max-width: 1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        margin-top: -12%;
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    
+    .inner-container {
+        width: 100%;
+    }
+    
+    .team-section .card {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-section {
+        padding: 0;
+    }
+    
+    .inner-container {
+        padding: 60px;
+    }
+    
+    .upift-text {
+        max-width: 500px;
+        margin-left: 100px;
+        display: inline-block;
+        font-size: 18px;
+    }
+    
+    .team-section .card {
+        width: 100%
+    }
+}
