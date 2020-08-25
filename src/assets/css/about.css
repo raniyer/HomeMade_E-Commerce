@@ -1,7 +1,7 @@
 .about-section {
     margin-top: -12%;
     background-color: whitesmoke;
-    background: url(Images/HandMade.jpg) no-repeat left;
+    background: url(/assets/img/HandMade.jpg) no-repeat left;
     background-size: 55%;
     overflow: hidden;
     padding: 200px 0;
