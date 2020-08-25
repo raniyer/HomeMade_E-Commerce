@@ -1,17 +1,15 @@
 .about-section {
-    margin-top: -12%;
     background-color: whitesmoke;
     background: url(/assets/img/HandMade.jpg) no-repeat left;
     background-size: 55%;
     overflow: hidden;
-    padding: 200px 0;
 }
 
 .inner-container {
     width: 55%;
     float: right;
     background-color: white;
-    padding: 120px;
+    padding: 80px;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                 -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
@@ -30,16 +28,18 @@
 
 
 /*-------------Uplift-------------*/
-#uplift {
-    margin-top: -90px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.uplift-section{
     background: #e3edf7;
+    width: 100%;
+    margin: 0;
+    padding: 70px 100px;
+    min-height: 90vh;
 }
 
-.uplift-left-col {
-    flex-basis: 50%;
+.uplift-right-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .uplift-btn {
@@ -56,21 +56,8 @@
     text-decoration: none;
 }
 
-.uplift-right-col {
-    flex-basis: 50%;
-    padding-bottom: 100px;
-}
-
-.upift-text {
-    max-width: 500px;
-    margin-left: 100px;
-    display: inline-block;
+.uplift-text {
     font-size: 18px;
-}
-
-.uplift-right-col img {
-    margin-top: 100px;
-    margin-left: 250px;
 }
 
 .uplift-right-col h1 {
@@ -146,21 +133,21 @@
 /*-------------------Team Section--------------------*/
 .team-section h1 {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 
 .team-section .container {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin: auto;
-    position: relative;
+    /* position: relative; */
     min-height: 1px;
 }
 
 .team-section {
     min-height: 100vh;
-    padding: 60px 15px;
-    float: left;
+    padding: 10px 15px;
+    /* float: left; */
     width: 100%;
 }
 
@@ -262,19 +249,29 @@
     .about-section {
         padding: 0;
     }
+
+    .inner-container > h1{
+        text-align: center;
+    }
     
     .inner-container {
-        padding: 60px;
+        padding: 50px;
     }
-    
-    .upift-text {
-        max-width: 500px;
-        margin-left: 100px;
-        display: inline-block;
-        font-size: 18px;
-    }
-    
+
     .team-section .card {
         width: 100%
+    }
+    .uplift-text{
+        text-align: center;
+    }
+
+    .uplift-section{
+        padding: 20px;
+    }
+
+    .uplift-right-col .social-media a{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
     }
 }

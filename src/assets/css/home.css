@@ -31,3 +31,12 @@
 .overlay > * {
     margin: 10px;
 }
+
+@media screen and (max-width: 750px){
+    .overlay{
+        width: 100%;
+        height: 100%;
+        font-size: 1.4rem;
+        padding: 1.4rem;
+    }
+}
