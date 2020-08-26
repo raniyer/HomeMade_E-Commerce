@@ -2,6 +2,8 @@
 
 This is a JAM stack E-commerce website made using 11ty and Snipcart, for Girlscript's Uplift Project, by Team HTML-07.
 
+[Netlify Demo](https://handmade-uplift.netlify.app/)
+
 ## Installation
 
 ### 1. Clone this repository
